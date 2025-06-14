@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master_page.master.cs" Inherits="SEGURANÇA_INTERNO_WEBFORM.NET.master_page" %>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Segurança Interna</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/placeholder.svg?height=40&width=180" alt="Logo Segurança Interna">
+                    </a>
+                </div>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="nav-link">Menu</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Sistemas</a>
+                            <div class="dropdown-content">
+                                <a href="#">Sistema 1</a>
+                                <a href="#">Sistema 2</a>
+                                <a href="#">Sistema 3</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Acessos</a>
+                            <div class="dropdown-content">
+                                <a href="#">Gerenciar Acessos</a>
+                                <a href="#">Solicitar Acesso</a>
+                                <a href="#">Histórico</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">Usuário</a>
+                            <div class="dropdown-content">
+                                <a href="#">Meu Perfil</a>
+                                <a href="#">Configurações</a>
+                                <a href="#">Sair</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="nav-link">Ajuda</a></li>
+                        <li><a href="#" class="nav-link">Suporte</a></li>
+                    </ul>
+                </nav>
+
+                <div class="user-info">
+                    <span class="user-name">Olá, Usuário</span>
+                    <img src="/placeholder.svg?height=32&width=32" alt="Avatar" class="user-avatar">
+                </div>
+            </div>
+        </header>
+
+        <!-- ÁREA PARA O CONTEÚDO DAS PÁGINAS FILHAS -->
+        <main>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </main>
+
+    </form>
+</body>
+</html>
